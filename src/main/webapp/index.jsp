@@ -15,7 +15,7 @@
         <script src="resource/assets/bootstrap/js/bootstrap.js"></script>
         <link href="resource/assets/bootstrap/css/bootstrap.css" rel="stylesheet">        
         <link href="resource/assets/css/custom.css" rel="stylesheet">        
-        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="favicon.png">
     </head>
     <body class="text-center">
         <!-- inicio do menu -->

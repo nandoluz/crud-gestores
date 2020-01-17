@@ -20,7 +20,7 @@ public class Conexao {
             con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/poupex?serverTimezone=UTC&useLegacyDatetimeCode=false", "root", "");
             System.out.println("Conexão aberta.");
         } catch (ClassNotFoundException ex) {
-            System.err.println("Classe JDBC não encontrada.");
+            System.err.println("Classe JDBC não encontrada." +ex);
         } catch (SQLException ex) {
             System.err.println("Erro na conexão com o banco de dados." + ex);
         }

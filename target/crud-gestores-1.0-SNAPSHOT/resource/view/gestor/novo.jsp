@@ -15,7 +15,7 @@
         <script src="../../assets/bootstrap/js/bootstrap.js"></script>
         <link href="../../assets/bootstrap/css/bootstrap.css" rel="stylesheet">        
         <link href="../../assets/css/custom.css" rel="stylesheet">        
-        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="/crud-gestores/favicon.png">
     </head>
     <body>        
         <%@include file="../menu.jsp" %>

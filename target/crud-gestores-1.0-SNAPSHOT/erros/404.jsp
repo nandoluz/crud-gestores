@@ -14,7 +14,7 @@
         <script src="/crud-gestores/resource/assets/bootstrap/js/bootstrap.js"></script>
         <link href="/crud-gestores/resource/assets/bootstrap/css/bootstrap.css" rel="stylesheet">        
         <link href="/crud-gestores/resource/assets/css/custom.css" rel="stylesheet">        
-        <link rel="icon" href="/crud-gestores/favicon.ico">
+        <link rel="icon" href="/crud-gestores/favicon.png">
         <title>404</title>
         <style >
             .pag404 {
