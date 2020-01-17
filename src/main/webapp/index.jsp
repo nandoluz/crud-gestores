@@ -50,7 +50,7 @@
         <div class="container d-flex h-100 align-items-center">
             <div class="w-100">   
                 <h2>Sistema de Manutenção de Gestores</h2>
-                <p class="lead">Este sistema contém as principais funções CRUD<br>Foi utilizado a tecnologia JSP</p>
+                <p class="lead">Este sistema contém as principais funções CRUD<br>Foi utilizada a tecnologia JSP</p>
             </div>
         </div>
     </body>

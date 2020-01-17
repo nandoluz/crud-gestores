@@ -37,7 +37,7 @@
                     <tr>
                         <th scope="col">Nome</th>
                         <th scope="col">Data de Nascimento</th>
-                        <th scope="col">Matricula</th>
+                        <th scope="col">Matrícula</th>
                         <th scope="col">Setor</th>
                         <th scope="col"></th>
                         <th scope="col"></th>

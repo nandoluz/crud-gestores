@@ -30,14 +30,14 @@
                         <small id="nomeHelp" class="form-text text-muted">Informe o nome completo do novo gestor.</small>
                     </div>
                     <div class="form-group">
-                        <label for="inputMatricula">Matricula<span class="obrigatorio">*</span></label>
+                        <label for="inputMatricula">Matrícula<span class="obrigatorio">*</span></label>
                         <input name="matricula" type="text" class="form-control" id="inputMatricula" aria-describedby="matriculaHelp" placeholder="XXX.XXX" required>
                         <small id="matriculaHelp" class="form-text text-muted">Este campo aceita letras e números.</small>
                     </div>
                     <div class="form-group">
                         <label for="inputData">Data de Nascimento<span class="obrigatorio">*</span></label>
                         <input name="data_nascimento" type="text" class="form-control" id="inputData" aria-describedby="dataHelp" placeholder="00/00/0000" required>
-                        <small id="dataHelp" class="form-text text-muted">Se preferir pode usar o caledario ao lado.</small>
+                        <small id="dataHelp" class="form-text text-muted">Use o formato dia/mês/ano.</small>
                     </div>
                     <div class="form-group">
                         <label for="inputSetor">Setor<span class="obrigatorio">*</span></label>
