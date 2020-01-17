@@ -31,14 +31,14 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(atual)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/crud-gestores" id="gestoresDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gestor</a>
+                        <a class="nav-link dropdown-toggle" href="/" id="gestoresDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gestor</a>
                         <div class="dropdown-menu" aria-labelledby="gestoresDrop">
                             <a class="dropdown-item" href="resource/view/gestor/novo.jsp">Novo</a>
                             <a class="dropdown-item" href="resource/view/gestor/listar.jsp">Listar</a>
                         </div>
                     </li>
                 </ul>
-                <form action="/crud-gestores/resource/view/gestor/busca.jsp" class="form-inline my-2 my-lg-0">
+                <form action="/resource/view/gestor/busca.jsp" class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="text" placeholder="Pesquisa gestor" name="por" aria-label="pesquisar">
                     <input type="hidden" name="action" value="pesquisar">
                     <button class="btn btn-dark my-2 my-sm-0" type="submit">Pesquisar</button>
@@ -52,9 +52,6 @@
                 <h2>Sistema de Manutenção de Gestores</h2>
                 <p class="lead">Este sistema contém as principais funções CRUD<br>Foi utilizado a tecnologia JSP</p>
             </div>
-        </div>
-        <div class="alert alert-danger">
-            
         </div>
     </body>
 </html>

@@ -20,7 +20,7 @@
         <script src="../../assets/bootstrap/js/bootstrap.js"></script>
         <link href="../../assets/bootstrap/css/bootstrap.css" rel="stylesheet">        
         <link href="../../assets/css/custom.css" rel="stylesheet">        
-        <link rel="icon" href="/crud-gestores/favicon.png">
+        <link rel="icon" href="/favicon.png">
     </head>
     <body>        
         <%@include file="../menu.jsp" %>
@@ -28,7 +28,7 @@
             <br>
             <div class="row col-12 justify-content-between">
                 <h2>Lista de todos os Gestores</h2>
-                <a class="btn btn-success btn-lg" href="/crud-gestores/resource/view/gestor/novo.jsp">Novo</a>
+                <a class="btn btn-success btn-lg" href="/resource/view/gestor/novo.jsp">Novo</a>
             </div>
             <br>
             <p></p>
@@ -60,8 +60,8 @@
                                 out.print("<td>" + sdf.format(gestor.getData_nascimento()) + "</td>");
                                 out.print("<td>" + gestor.getMatricula()+ "</td>");
                                 out.print("<td>" + gestor.getSetor() + "</td>");
-                                out.print("<td><form id='form-delete-"+ gestor.getId() +"' action='/crud-gestores/gestorServlet.do?id=" + gestor.getId() + "&action=deletar' method='post'><input type='button' class='btn btn-danger' value='Apagar' onclick='really(" + gestor.getId() + ")'></form></td>");
-                                out.print("<td><form action='/crud-gestores/resource/view/gestor/editar.jsp?id=" + gestor.getId() + "' method='post'><input type='submit' class='btn btn-primary' value=' Editar '></form></td>");
+                                out.print("<td><form id='form-delete-"+ gestor.getId() +"' action='/gestorServlet.do?id=" + gestor.getId() + "&action=deletar' method='post'><input type='button' class='btn btn-danger' value='Apagar' onclick='really(" + gestor.getId() + ")'></form></td>");
+                                out.print("<td><form action='/resource/view/gestor/editar.jsp?id=" + gestor.getId() + "' method='post'><input type='submit' class='btn btn-primary' value=' Editar '></form></td>");
                                 out.print("</tr>");
                             }
                         }

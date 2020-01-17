@@ -1,5 +1,0 @@
-model\bean\Mensagem.class
-model\dao\GestorDAO.class
-model\bean\Gestor.class
-controller\GestorServlet.class
-model\dao\Conexao.class

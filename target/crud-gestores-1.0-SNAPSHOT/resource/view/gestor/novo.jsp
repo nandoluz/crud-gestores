@@ -15,7 +15,7 @@
         <script src="../../assets/bootstrap/js/bootstrap.js"></script>
         <link href="../../assets/bootstrap/css/bootstrap.css" rel="stylesheet">        
         <link href="../../assets/css/custom.css" rel="stylesheet">        
-        <link rel="icon" href="/crud-gestores/favicon.png">
+        <link rel="icon" href="/favicon.png">
     </head>
     <body>        
         <%@include file="../menu.jsp" %>
@@ -23,7 +23,7 @@
             <h2>Cadastro de Gestor</h2>
             <hr>
             <div class="container col-8">
-                <form action="/crud-gestores/gestorServlet.do" method="post">
+                <form action="/gestorServlet.do" method="post">
                     <div class="form-group">
                         <label for="inputNome">Nome<span class="obrigatorio">*</span></label>
                         <input name="nome" type="text" class="form-control" id="inputNome" aria-describedby="nomeHelp" placeholder="Nome completo" required autofocus>

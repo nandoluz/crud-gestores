@@ -1,5 +1,7 @@
 package model.dao;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -17,7 +19,7 @@ public class Conexao {
     public void getConexao(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost/poupex?serverTimezone=UTC&useLegacyDatetimeCode=false", "root", "");
+            con = (Connection) DriverManager.getConnection("jdbc:mysql://us-cdbr-iron-east-05.cleardb.net:3306/heroku_a0953116a219a95", "bbac8f9e95d3f9", "a43a95ea");
             System.out.println("Conexão aberta.");
         } catch (ClassNotFoundException ex) {
             System.err.println("Classe JDBC não encontrada." +ex);

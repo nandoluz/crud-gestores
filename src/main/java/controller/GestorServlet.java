@@ -85,14 +85,14 @@ public class GestorServlet extends HttpServlet {
                             /* exibir mensagem de sucesso */
                             out.println(Mensagem.success());
                         }catch(Exception ex){//caso ocorra erro na exibição da mensagem
-                            response.sendRedirect("/crud-gestores");//redireciona para index
+                            response.sendRedirect("/");//redireciona para index
                         }                        
                     }else{//se não for verdade que o gestor foi criado com sucesso:
                         try (PrintWriter out = response.getWriter()) {
                             /* exibir mensagem de sucesso */
                             out.println(Mensagem.error());
                         }catch(Exception ex){//caso ocorra erro na exibição da mensagem
-                            response.sendRedirect("/crud-gestores");//redireciona para index
+                            response.sendRedirect("/");//redireciona para index
                         }
                     }
                     break;
@@ -113,14 +113,14 @@ public class GestorServlet extends HttpServlet {
                             /* exibir mensagem de sucesso */
                             out.println(Mensagem.success());
                         }catch(Exception ex){//caso ocorra erro na exibição da mensagem
-                            response.sendRedirect("/crud-gestores");//redireciona para index
+                            response.sendRedirect("/");//redireciona para index
                         }
                     }else{//se não for verdade que o gestor foi criado com sucesso:
                         try (PrintWriter out = response.getWriter()) {
                             /* exibir mensagem de sucesso */
                             out.println(Mensagem.error());
                         }catch(Exception ex){//caso ocorra erro na exibição da mensagem
-                            response.sendRedirect("/crud-gestores");//redireciona para index
+                            response.sendRedirect("/");//redireciona para index
                         }
                     }
                     break;
@@ -133,19 +133,19 @@ public class GestorServlet extends HttpServlet {
                             /* exibir mensagem de sucesso */
                             out.println(Mensagem.success());
                         }catch(Exception ex){//caso ocorra erro na exibição da mensagem
-                            response.sendRedirect("/crud-gestores");//redireciona para index
+                            response.sendRedirect("/");//redireciona para index
                         }                        
                     }else{//se não for verdade que o gestor foi criado com sucesso:
                         try (PrintWriter out = response.getWriter()) {
                             /* exibir mensagem de sucesso */
                             out.println(Mensagem.error());
                         }catch(Exception ex){//caso ocorra erro na exibição da mensagem
-                            response.sendRedirect("/crud-gestores");//redireciona para index
+                            response.sendRedirect("/");//redireciona para index
                         } 
                     }
                     break;
                 default:
-                    response.sendRedirect("/crud-gestores");//redireciona para index
+                    response.sendRedirect("/");//redireciona para index
                     break;
             }
         }catch(NullPointerException | ParseException | IllegalStateException | NumberFormatException ex){//caso o parametro action venha nulo é redirecionado para index
@@ -155,7 +155,7 @@ public class GestorServlet extends HttpServlet {
                 out.println(Mensagem.error());
             }catch(Exception ex1){//caso ocorra erro na exibição da mensagem
                 System.out.println(ex1);
-                response.sendRedirect("/crud-gestores");//redireciona para index
+                response.sendRedirect("/");//redireciona para index
             }
         }
     }

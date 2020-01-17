@@ -17,7 +17,7 @@
         <script src="../../assets/bootstrap/js/bootstrap.js"></script>
         <link href="../../assets/bootstrap/css/bootstrap.css" rel="stylesheet">        
         <link href="../../assets/css/custom.css" rel="stylesheet">        
-        <link rel="icon" href="/crud-gestores/favicon.png">
+        <link rel="icon" href="/favicon.png">
     </head>
     <body>        
         <%@include file="../menu.jsp" %>
@@ -26,7 +26,7 @@
             <hr>
             <div class="container col-8">
                 
-                <form action="/crud-gestores/gestorServlet.do" method="post">
+                <form action="/gestorServlet.do" method="post">
                     <%  
                         GestorDAO dao = new GestorDAO();
                         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -63,7 +63,7 @@
                     <br>
                     <div class="col-12 d-flex justify-content-center">
                         <button type="submit" class="btn btn-success btn-lg m-3 justify-content-center">Atualizar</button>
-                        <a href="/crud-gestores/resource/view/gestor/listar.jsp" class="btn btn-danger btn-lg m-3">&nbsp;Cancelar&nbsp;</a>
+                        <a href="/resource/view/gestor/listar.jsp" class="btn btn-danger btn-lg m-3">&nbsp;Cancelar&nbsp;</a>
                     </div>
                 </form>
             </div>

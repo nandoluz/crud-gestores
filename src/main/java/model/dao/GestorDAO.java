@@ -1,5 +1,6 @@
 package model.dao;
 
+import java.net.URISyntaxException;
 import model.bean.Gestor;
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -12,9 +13,9 @@ import java.util.ArrayList;
  */
 public class GestorDAO extends Conexao{
     public boolean create(Gestor gestor){
-        getConexao(); //abre conexão com o banco
         String sql = "INSERT INTO gestores (nome, matricula, data_nascimento, setor) VALUES (?,?,?,?);";
         try {
+            getConexao(); //abre conexão com o banco
             pstm = (PreparedStatement) con.prepareStatement(sql);
             pstm.setString(1, gestor.getNome());
             pstm.setString(2, gestor.getMatricula());
@@ -28,13 +29,13 @@ public class GestorDAO extends Conexao{
             System.err.println("Erro ao salvar novo gestor: " + ex );
             fecharConexao();
             return false;
-        }
+        } 
     }
     public ArrayList<Gestor> readAll(){
-        getConexao();
         String sql = "SELECT id, nome, matricula, data_nascimento, setor FROM gestores ORDER BY id DESC";
         ArrayList<Gestor> lista = new ArrayList<>();//lista que será adicionado os gestores retornados do banco de dados
         try {
+            getConexao();
             pstm = (PreparedStatement) con.prepareStatement(sql);
             rs = pstm.executeQuery();
             Gestor gestor;
@@ -55,10 +56,10 @@ public class GestorDAO extends Conexao{
         return lista;
     }
     public ArrayList<Gestor> pesquisar(String por){
-        getConexao();
         String sql = "SELECT id, nome, matricula, data_nascimento, setor FROM gestores WHERE nome LIKE '%"+por+"%' ORDER BY id DESC;";
         ArrayList<Gestor> lista = new ArrayList<>();//lista que será adicionado os gestores retornados do banco de dados
         try {
+            getConexao();
             pstm = (PreparedStatement) con.prepareStatement(sql);
             rs = pstm.executeQuery();
             Gestor gestor;
@@ -79,9 +80,9 @@ public class GestorDAO extends Conexao{
         return lista;
     }
     public boolean update(Gestor gestor){
-        getConexao();
         String sql = "UPDATE gestores SET nome=?, matricula=?, data_nascimento=?, setor=? WHERE id=?;";
         try {
+            getConexao();
             pstm = (PreparedStatement) con.prepareStatement(sql);
             pstm.setString(1, gestor.getNome());
             pstm.setString(2, gestor.getMatricula());
@@ -99,9 +100,9 @@ public class GestorDAO extends Conexao{
         }
     }
     public boolean delete(int id){
-        getConexao();
         String sql = "DELETE FROM gestores WHERE id=?;";
         try {
+            getConexao();
             pstm = (PreparedStatement) con.prepareStatement(sql);
             pstm.setInt(1, id);
             pstm.execute();
@@ -115,10 +116,10 @@ public class GestorDAO extends Conexao{
         }
     }
     public Gestor readOne(int id){
-        getConexao();
         String sql = "SELECT nome, matricula, data_nascimento, setor FROM gestores WHERE id=?;";
         Gestor gestor = new Gestor();
         try {
+            getConexao();
             pstm = (PreparedStatement) con.prepareStatement(sql);
             pstm.setInt(1, id);
             rs = pstm.executeQuery();

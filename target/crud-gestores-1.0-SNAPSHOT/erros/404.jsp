@@ -9,12 +9,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
-        <script src="/crud-gestores/resource/assets/jquery/jquery-3.4.1.js"></script>
-        <script src="/crud-gestores/resource/assets/jquery/popper.min.js"></script>
-        <script src="/crud-gestores/resource/assets/bootstrap/js/bootstrap.js"></script>
-        <link href="/crud-gestores/resource/assets/bootstrap/css/bootstrap.css" rel="stylesheet">        
-        <link href="/crud-gestores/resource/assets/css/custom.css" rel="stylesheet">        
-        <link rel="icon" href="/crud-gestores/favicon.png">
+        <script src="/resource/assets/jquery/jquery-3.4.1.js"></script>
+        <script src="/resource/assets/jquery/popper.min.js"></script>
+        <script src="/resource/assets/bootstrap/js/bootstrap.js"></script>
+        <link href="/resource/assets/bootstrap/css/bootstrap.css" rel="stylesheet">        
+        <link href="/resource/assets/css/custom.css" rel="stylesheet">        
+        <link rel="icon" href="/favicon.png">
         <title>404</title>
         <style >
             .pag404 {
@@ -28,7 +28,7 @@
             <div class="w-100">
                 <h1 class="pag404">404</h1>
                 <p class="lead">Não conseguimos encontrar sua pagina =(<br>Clique no botão abaixo para voltar ao inicio.</p>
-                <a href="/crud-gestores" class="btn btn-primary">Vamos voltar</a>            
+                <a href="/" class="btn btn-primary">Vamos voltar</a>            
             </div>
         </div>
     </body>
