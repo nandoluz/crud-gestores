@@ -16,15 +16,22 @@ public class Conexao {
     Connection con;
     PreparedStatement pstm;
     ResultSet rs;
-    public void getConexao(){
+    public Connection getConexao(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = (Connection) DriverManager.getConnection("jdbc:mysql://us-cdbr-iron-east-05.cleardb.net:3306/heroku_a0953116a219a95", "bbac8f9e95d3f9", "a43a95ea");
+            URI dbUri = new URI(System.getenv("CLEARDB_DATABASE_URL"));
+            String username = dbUri.getUserInfo().split(":")[0];
+            String password = dbUri.getUserInfo().split(":")[1];
+            String dbUrl = "jdbc:mysql://" + dbUri.getHost() + dbUri.getPath();
+            con = (Connection) DriverManager.getConnection(dbUrl, username, password);
             System.out.println("Conexão aberta.");
+            return con;
         } catch (ClassNotFoundException ex) {
             System.err.println("Classe JDBC não encontrada." +ex);
-        } catch (SQLException ex) {
+            return con;
+        } catch (SQLException | URISyntaxException ex) {
             System.err.println("Erro na conexão com o banco de dados." + ex);
+            return con;
         }
     }
     public void fecharConexao(){

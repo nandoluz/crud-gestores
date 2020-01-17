@@ -1,6 +1,5 @@
 package model.dao;
 
-import java.net.URISyntaxException;
 import model.bean.Gestor;
 import java.sql.Date;
 import java.sql.PreparedStatement;
